@@ -1,7 +1,9 @@
-Provide a light, class compliment midi driver to the Digispark device.
+Allows for the Digispark Attiny85 to function as a HID-MIDI device.
+
+Based on V-MIDI-HID: http://cryptomys.de/horo/V-USB-MIDI/
 
 Notes:
-Currently only provides sending midi to host.
+Currently only provides midi out to host.
 
 Tested and working On:
 Macbook OSX 10.10.5
