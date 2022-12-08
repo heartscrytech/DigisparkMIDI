@@ -510,13 +510,14 @@ extern "C" {
     /* this Function is called if a MIDI Out message (from PC) arrives.          */
     /*                                                                           */
     /*---------------------------------------------------------------------------*/
-    
+    #ifndef DIGIMIDI_WRITEOUT
     void usbFunctionWriteOut(uchar * data, uchar len)
     {
         //TODO: Use midi callback for arduino to allow for listining.
         // DEBUG LED
         //PORTC ^= 0x20;
     }
+    #endif
 
 #ifdef __cplusplus
 } // extern "C"
